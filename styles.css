@@ -100,6 +100,37 @@ li {
     right: 0;
     bottom: 0;
     z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.menu--open .menu__backdrop {
+    display: flex;
+}
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__list {
+    padding: 32px 0;
+}
+
+.menu__link {
+    color: white;
+    font-size: 40px;
+}
+
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color: white;
 }
 
 /*
@@ -359,4 +390,14 @@ footer {
 
 .footer__link {
     padding: 0 8px;
+}
+
+/*
+
+MEDIA 
+
+*/
+
+@media (max-width: 550px) {
+    
 }
