@@ -453,6 +453,7 @@ select {
 
 .books__loading {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
   padding-top: 60px;
@@ -462,6 +463,13 @@ select {
 
 .fa-spinner {
   animation: rotate 600ms infinite linear;
+}
+
+.books__loading--spinner {
+    display: none !important;
+}
+.books__loading .books__loading--spinner {
+    display: block !important;
 }
 
 @keyframes rotate {
